@@ -155,6 +155,7 @@ body{
             margin: 0 auto;
             width: 150px;
             outline: none;
+            cursor: pointer;
 
             &:hover{
                 opacity: 0.5;
@@ -317,6 +318,7 @@ body{
         margin: 0 auto;
         width: 150px;
         outline: none;
+        cursor: pointer;
 
         &:hover{
             opacity: 0.5;
@@ -381,13 +383,20 @@ body{
                         &::after{
                             display: block;
                         }
+
+                        a{
+                            color: #2d314d;
+                        }
+                    }
+
+                    a{
+                        margin: 0 1em;
+                        display: inline;
+                        color: hsl(233, 8%, 62%);
                     }
                 }
 
-                a{
-                    margin: 0 1em;
-                    display: inline;
-                }
+                
             }
 
             button{
@@ -396,6 +405,7 @@ body{
                 top: 1.5em;
                 bottom: unset;
                 left: unset;
+                cursor: pointer;
             }
         }
     }

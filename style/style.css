@@ -148,6 +148,7 @@ body {
   margin: 0 auto;
   width: 150px;
   outline: none;
+  cursor: pointer;
 }
 
 .intro .content-warp button:hover {
@@ -325,6 +326,7 @@ body {
   margin: 0 auto;
   width: 150px;
   outline: none;
+  cursor: pointer;
 }
 
 .footer button:hover {
@@ -395,9 +397,13 @@ body {
   .header .menu .menu-links li:hover::after {
     display: block;
   }
-  .header .menu .menu-links a {
+  .header .menu .menu-links li:hover a {
+    color: #2d314d;
+  }
+  .header .menu .menu-links li a {
     margin: 0 1em;
     display: inline;
+    color: #9698a6;
   }
   .header .menu button {
     position: fixed;
@@ -405,6 +411,7 @@ body {
     top: 1.5em;
     bottom: unset;
     left: unset;
+    cursor: pointer;
   }
   .intro {
     margin: 4em 0 -8.5em 0;
