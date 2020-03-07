@@ -405,14 +405,14 @@ body{
         display: flex;
 
         .content-warp{
-            margin: 7em auto;
+            margin: 7em auto 0 5em;
             text-align: left;
         }
 
         .img-warp{
             width: 70%;
             // margin: -5em -12em 0 0;
-            margin-right: -12em;
+            margin-right: -18em;
             background-image: url("../images/bg-intro-desktop.svg");
             background-position: 0 160%;
             order: 2;

@@ -413,12 +413,12 @@ body {
     display: flex;
   }
   .intro .content-warp {
-    margin: 7em auto;
+    margin: 7em auto 0 5em;
     text-align: left;
   }
   .intro .img-warp {
     width: 70%;
-    margin-right: -12em;
+    margin-right: -18em;
     background-image: url("../images/bg-intro-desktop.svg");
     background-position: 0 160%;
     -webkit-box-ordinal-group: 3;
