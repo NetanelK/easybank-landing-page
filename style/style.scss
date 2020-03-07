@@ -237,6 +237,13 @@ body{
         max-width: 375px;
         margin: 1.5em auto;
         text-align: left;
+        cursor: pointer;
+
+        &:hover{
+            h4{
+                color: hsl(136, 65%, 51%) !important;
+            }
+        }
 
         img{
             border-radius: .5em .5em 0 0;
@@ -278,6 +285,7 @@ body{
         svg{
             fill: white;
             margin: 0 0.25em;
+            
             &:hover{
                 fill: hsl(136, 65%, 51%);
             }
@@ -323,4 +331,177 @@ body{
 }
 
 .attribution { font-size: 11px; text-align: center; color: white;}
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution a { color: hsl(136, 65%, 51%); }
+
+@media (min-width:720px){
+    .header{
+        padding: 1.5em 0;
+        img{
+            margin-left: 5em;
+        }
+
+        label{
+            display: none;
+        }
+
+        .menu{
+            height: unset;
+            width: 500px;
+            background-image: none;
+            display: block;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+        
+            .menu-links{
+                background-color: unset;
+                display: flex;
+                margin: 0;
+                max-width: 100%;
+
+                li{
+                    padding-top: 1.5em !important;
+
+                    &::after{
+                        content: "";
+                        background-image: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%) 80%);
+                        display: none;
+                        width: 60%;
+                        height: 5px;
+                        position: relative;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        margin: 1.4em auto 0 auto;
+                    }
+
+                    &:hover{
+                        &::after{
+                            display: block;
+                        }
+                    }
+                }
+
+                a{
+                    margin: 0 1em;
+                    display: inline;
+                }
+            }
+
+            button{
+                position: fixed;
+                right: 10em;
+                top: 1.5em;
+                bottom: unset;
+                left: unset;
+            }
+        }
+    }
+
+    .intro{
+        margin: 4em 0 -8.5em 0;
+        display: flex;
+
+        .content-warp{
+            margin: 7em auto;
+            text-align: left;
+        }
+
+        .img-warp{
+            width: 70%;
+            // margin: -5em -12em 0 0;
+            margin-right: -12em;
+            background-image: url("../images/bg-intro-desktop.svg");
+            background-position: 0 160%;
+            order: 2;
+
+            img{
+                width: 70%;
+                margin-top: -10em;
+            }
+        }
+    }
+
+    .about{
+        .head-wrap{
+            margin: 0 5em;
+            text-align: left;
+            max-width: 600px;
+        }
+
+        .content-warp{
+            display: flex;
+            padding: 0 5em;
+
+            .content{
+                text-align: left;
+            }
+        }
+    }
+
+    .news{
+        text-align: left;
+        padding: 4em;
+
+
+        h1{
+            margin: 1em 1em 1em 0.5em;
+        }
+        .cards{
+            display: flex;
+
+            .card{
+                margin: 0 1em;
+                padding-bottom: .5em;
+            }
+        }
+    }
+
+    .footer{
+        display: grid;
+        grid-template-areas: "logo links button"
+                              ". links ."
+                              "socials links copy"
+                              "attribution attribution attribution";
+        padding: 3em 5em 0 5em;
+        svg{
+            grid-area: logo;
+            margin: 0;
+        }
+
+        .social{
+            grid-area: socials;
+            margin: 0;
+            text-align: left;
+        }
+                              
+        .links{
+            display: flex;
+            grid-area: links;
+            text-align: left;
+            margin: -0.5em 0 0 0;
+
+            .links-first{
+                margin-right: 4em;
+            }
+        }
+
+        button{
+            grid-area: button;
+            margin: 0 0 0 auto;
+        }
+
+        P{
+            text-align: right;
+            grid-area: copy;
+            margin: auto 0;
+        }
+
+        .attribution{
+            grid-area: attribution;
+            margin-top: 3em;
+        }
+    }
+}
