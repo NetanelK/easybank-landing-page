@@ -14,6 +14,7 @@ body {
   font: 400 18px 'Public Sans';
   height: 100%;
   overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .header {
@@ -469,7 +470,10 @@ body {
   .footer {
     display: -ms-grid;
     display: grid;
-        grid-template-areas: "logo links button" ". links ." "socials links copy" "attribution attribution attribution";
+        grid-template-areas: "logo links button"
+ ". links ."
+ "socials links copy"
+ "attribution attribution attribution";
     padding: 3em 5em 0 5em;
   }
   .footer svg {
