@@ -321,9 +321,19 @@ body{
 .attribution a { color: hsl(136, 65%, 51%); }
 
 @media (min-width:720px){
-    .cards, .about .content-warp, .links, .intro{
+    .cards, .about .content-warp, .links, .intro, .menu-links{
         display: grid;
         grid-template-columns: repeat(2, auto);
+    }
+
+    .menu-links {
+        li:nth-child(2){
+            padding-top: 1em;
+        }
+
+        li:nth-child(5){
+            grid-column:  1/span 2;
+        }
     }
 
     .cards .card{
