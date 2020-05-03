@@ -15,6 +15,21 @@ body{
     overflow-y: auto;
 }
 
+%button{
+    border-radius: 20px;
+            border: none;
+            background-image: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%) 80%);
+            color: white;
+            padding: 1em;
+            margin: 0 auto;
+            width: 150px;
+            outline: none;
+
+            &:hover{
+                opacity: 0.5;
+            }
+}
+
 .header{
     background-color: white;
     position: fixed;
@@ -94,18 +109,7 @@ body{
             left: 0;
             right: 0;
             bottom: 7em;
-            border-radius: 20px;
-            border: none;
-            background-image: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%) 80%);
-            color: white;
-            padding: 1em;
-            margin: 0 auto;
-            width: 150px;
-            outline: none;
-
-            &:hover{
-                opacity: 0.5;
-            }
+            @extend %button;
         }
     }
 }
@@ -147,19 +151,7 @@ body{
         }
 
         button{
-            border-radius: 20px;
-            border: none;
-            background-image: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%) 80%);
-            color: white;
-            padding: 1em;
-            margin: 0 auto;
-            width: 150px;
-            outline: none;
-            cursor: pointer;
-
-            &:hover{
-                opacity: 0.5;
-            }
+            @extend %button;
         }
     }
 }
@@ -310,19 +302,7 @@ body{
     }
 
     button{
-        border-radius: 20px;
-        border: none;
-        background-image: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%) 80%);
-        color: white;
-        padding: 1em;
-        margin: 0 auto;
-        width: 150px;
-        outline: none;
-        cursor: pointer;
-
-        &:hover{
-            opacity: 0.5;
-        }
+        @extend %button;
     }
 
     p{

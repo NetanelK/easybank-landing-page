@@ -16,6 +16,22 @@ body {
   overflow-y: auto;
 }
 
+.header .menu button, .intro .content-warp button, .footer button {
+  border-radius: 20px;
+  border: none;
+  background-image: -webkit-gradient(linear, left top, right top, from(#31d35c), color-stop(80%, #2bb7da));
+  background-image: linear-gradient(to right, #31d35c, #2bb7da 80%);
+  color: white;
+  padding: 1em;
+  margin: 0 auto;
+  width: 150px;
+  outline: none;
+}
+
+.header .menu button:hover, .intro .content-warp button:hover, .footer button:hover {
+  opacity: 0.5;
+}
+
 .header {
   background-color: white;
   position: fixed;
@@ -90,19 +106,6 @@ body {
   left: 0;
   right: 0;
   bottom: 7em;
-  border-radius: 20px;
-  border: none;
-  background-image: -webkit-gradient(linear, left top, right top, from(#31d35c), color-stop(80%, #2bb7da));
-  background-image: linear-gradient(to right, #31d35c, #2bb7da 80%);
-  color: white;
-  padding: 1em;
-  margin: 0 auto;
-  width: 150px;
-  outline: none;
-}
-
-.header .menu button:hover {
-  opacity: 0.5;
 }
 
 .intro .img-warp {
@@ -136,23 +139,6 @@ body {
   line-height: 1.65;
   font-size: 16px;
   margin: 1em 0;
-}
-
-.intro .content-warp button {
-  border-radius: 20px;
-  border: none;
-  background-image: -webkit-gradient(linear, left top, right top, from(#31d35c), color-stop(80%, #2bb7da));
-  background-image: linear-gradient(to right, #31d35c, #2bb7da 80%);
-  color: white;
-  padding: 1em;
-  margin: 0 auto;
-  width: 150px;
-  outline: none;
-  cursor: pointer;
-}
-
-.intro .content-warp button:hover {
-  opacity: 0.5;
 }
 
 .about {
@@ -314,23 +300,6 @@ body {
 
 .footer .links a:hover {
   color: #31d35c;
-}
-
-.footer button {
-  border-radius: 20px;
-  border: none;
-  background-image: -webkit-gradient(linear, left top, right top, from(#31d35c), color-stop(80%, #2bb7da));
-  background-image: linear-gradient(to right, #31d35c, #2bb7da 80%);
-  color: white;
-  padding: 1em;
-  margin: 0 auto;
-  width: 150px;
-  outline: none;
-  cursor: pointer;
-}
-
-.footer button:hover {
-  opacity: 0.5;
 }
 
 .footer p {
